@@ -2,7 +2,26 @@ leilaoapp/__pycache__/*
 
 .env
 
-# EXAMPLE
-# /apps/categories/__pycache__/*
-# /apps/categories/migrations/*
+/apps/category/__pycache__/*
+/apps/category/migrations/*
 
+/apps/item/__pycache__/* 
+/apps/item/migrations/*
+
+/apps/bidder/__pycache__/*
+/apps/bidder/migrations/*
+
+/apps/bid/__pycache__/*
+/apps/bid/migrations/*
+
+/apps/auctioneer/__pycache__/*
+/apps/auctioneer/migrations/*
+
+/apps/address/__pycache__/*
+/apps/address/migrations/*
+
+/apps/auction/__pycache__/*
+/apps/auction/migrations/*
+
+/apps/payment/__pycache__/*
+/apps/payment/migrations/*
