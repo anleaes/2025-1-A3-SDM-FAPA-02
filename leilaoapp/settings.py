@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'category.apps.CategoryConfig',
     'item.apps.ItemConfig',
     'bidder.apps.BidderConfig',
+    'bid.apps.BidConfig',
 ]
 
 MIDDLEWARE = [
