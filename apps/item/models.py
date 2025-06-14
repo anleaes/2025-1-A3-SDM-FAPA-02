@@ -5,8 +5,7 @@ from category.models import Category
 class Item(models.Model):
     name = models.CharField('Nome', max_length=50)
     description = models.TextField('Descricao', max_length=100)
-    starting_value = models.DecimalField('Valor inicial',  decimal_places=2, 
-    default=0.00)
+    starting_value = models.DecimalField('Valor inicial',  decimal_places=2,  default=0.00, max_digits=10)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
 
     class Meta:
