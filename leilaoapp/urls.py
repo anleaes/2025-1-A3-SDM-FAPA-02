@@ -23,4 +23,5 @@ urlpatterns = [
     path('item/', include('item.urls', namespace='item')),
     path('ofertante/', include('bidder.urls', namespace='bidder')),    
     path('lance/', include('bid.urls', namespace='bid')),
+    path('leiloeiro/', include('auctioneer.urls', namespace='auctioneer')), 
 ]
