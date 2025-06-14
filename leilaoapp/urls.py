@@ -22,5 +22,6 @@ urlpatterns = [
     path('categoria/', include('category.urls', namespace='category')),
     path('item/', include('item.urls', namespace='item')),
     path('ofertante/', include('bidder.urls', namespace='bidder')),    
-    path('leilao/', include('bid.urls', namespace='bid')),
+    path('lance/', include('bid.urls', namespace='bid')),
+    path('leiloeiro/', include('auctioneer.urls', namespace='auctioneer')), 
 ]
