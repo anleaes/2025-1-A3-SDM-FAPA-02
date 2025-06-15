@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'bid.apps.BidConfig',
     'auctioneer.apps.AuctioneerConfig',
     'address.apps.AddressConfig',
+    'auction.apps.AuctionConfig',
 ]
 
 MIDDLEWARE = [
