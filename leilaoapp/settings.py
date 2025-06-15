@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'auctioneer.apps.AuctioneerConfig',
     'address.apps.AddressConfig',
     'auction.apps.AuctionConfig',
+    'payment.apps.PaymentConfig',
 ]
 
 MIDDLEWARE = [
