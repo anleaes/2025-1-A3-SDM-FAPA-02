@@ -26,4 +26,5 @@ urlpatterns = [
     path('leiloeiro/', include('auctioneer.urls', namespace='auctioneer')), 
     path('endereco/', include('address.urls', namespace='address')), 
     path('leilao/', include('auction.urls', namespace='auction')),
+    path('pagamento/', include('payment.urls', namespace='payment')),
 ]
