@@ -1,5 +1,6 @@
 from django.db import models
 from category.models import Category
+from auction.models import Auction
 
 # Create your models here.
 class Item(models.Model):
@@ -7,6 +8,7 @@ class Item(models.Model):
     description = models.TextField('Descricao', max_length=100)
     starting_value = models.DecimalField('Valor inicial',  decimal_places=2,  default=0.00, max_digits=10)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    auction = models.ForeignKey(Auction, on_delete=models.CASCADE, related_name='items',)
 
     class Meta:
         verbose_name = 'Item'
