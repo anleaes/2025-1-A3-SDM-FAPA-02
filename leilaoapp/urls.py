@@ -24,4 +24,5 @@ urlpatterns = [
     path('ofertante/', include('bidder.urls', namespace='bidder')),    
     path('lance/', include('bid.urls', namespace='bid')),
     path('leiloeiro/', include('auctioneer.urls', namespace='auctioneer')), 
+    path('endereco/', include('address.urls', namespace='address')), 
 ]
