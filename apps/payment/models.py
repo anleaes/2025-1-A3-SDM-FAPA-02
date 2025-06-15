@@ -3,7 +3,6 @@ from bidder.models import Bidder
 from auction.models import Auction
 from item.models import Item
 # Create your models here.
-
 class Payment(models.Model):
     amount_paid = models.CharField('Valor', max_length=50)
     bidder = models.ForeignKey(Bidder, on_delete=models.CASCADE)
