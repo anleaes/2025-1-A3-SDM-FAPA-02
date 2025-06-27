@@ -13,4 +13,4 @@ class Address(models.Model):
         ordering =['id']
 
     def __str__(self):
-        return self.name
+        return self.street
