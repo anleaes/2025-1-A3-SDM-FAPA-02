@@ -6,7 +6,7 @@ from item.models import Item
 class Auction(models.Model):
     title = models.CharField('Título', max_length=200)
     description = models.TextField('Descrição')
-    address = models.ForeignKey('address.Address', on_delete=models.CASCADE)
+    address = models.ManyToManyField('address.Address')
     start_date = models.DateTimeField('Data Início')
     end_date = models.DateTimeField('Data Fim')
     auctioneer = models.ForeignKey(Auctioneer, on_delete=models.CASCADE, related_name='auctions')
